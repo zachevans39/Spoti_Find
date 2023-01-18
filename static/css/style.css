@@ -1,0 +1,38 @@
+body {
+    background-color: black;
+}
+
+nav {
+    width: 100%;
+    background: #1DB954;
+    height: 80px;
+}
+
+a {
+    padding-left: 25px;
+}
+
+.navtextcolor {
+    color: antiquewhite;
+    font-size: 25px;
+}
+
+h1 {
+    color: antiquewhite;
+    font-size: 25px;
+}
+
+h2 {
+    color: antiquewhite;
+}
+
+p {
+    color: antiquewhite;
+}
+
+label {
+    color: antiquewhite;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+

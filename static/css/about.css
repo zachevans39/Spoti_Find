@@ -1,0 +1,166 @@
+* {
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+body {
+	width: 100%;
+	height: 100vh;
+	background-color: #000;
+	background-image: url('../images/spotify_dev.png');
+	background-size: 35%;
+	background-repeat: no-repeat;
+	position: center;
+	padding: 0;
+	align-items: center;
+	justify-content: space-between;
+	background-position-x: 50%;
+	background-position-y: 80%;
+}
+
+nav {
+	width: 100%;
+	background: #1DB954;
+	position: absolute;
+	padding: 8%;
+	margin-bottom: 20px;
+	align-items: center;
+	justify-content: space-between;
+}
+
+nav .logo {
+	width: 60px;
+}
+
+nav ul li {
+	list-style: none;
+	display: inline-block;
+	margin-left: 4px;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: antiquewhite;
+	font-size: 19px;
+	margin-left: 4px;
+	margin-right: 4px;
+}
+
+.white-box {
+	background-color: antiquewhite;
+	color: black;
+	padding: 15px;
+	margin: 40px;
+}
+
+.dropdown-menu {
+	background-color: antiquewhite;
+	border: 4px solid #1DB954;
+	border-radius: 5px;
+	width: fit-content;
+}
+
+.dropdown-item {
+	font-weight: bold;
+}
+
+#navbarDropdown {
+	color: black;
+	font-weight: bold;
+}
+
+#navbarDropdown:hover {
+	color: antiquewhite;
+}
+
+#colorscheme {
+	color: black;
+	font-weight: bold;
+}
+
+#colorscheme:hover {
+	color: antiquewhite;
+}
+
+.content {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	flex-direction: column;
+	height: 40vh;
+}
+
+.content h1 {
+	font-size: 80px;
+	color: antiquewhite;
+	-webkit-text-stroke: 3px #1DB954;
+	font-weight: 600;
+	transition: 0.5s;
+	position: static;
+}
+
+.content h1:hover {
+	-webkit-text-stroke: 3px antiquewhite;
+	color: transparent;
+}
+
+#references {
+	color: #1DB954;
+	font-size: 13px;
+}
+
+#references:hover {
+	color: black;
+}
+
+.back-video {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	z-index: -1;
+}
+
+@media(min-aspect-ratio: 16/9) {
+	.back-video {
+		width: 100%;
+		height: auto;
+	}
+
+	.navbar-toggler {
+		background: antiquewhite;
+		border-color: black;
+		border-radius: 8px;
+		border-width: 3px;
+	}
+
+	.navbar-toggler-icon {
+		background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(29,185,84, 0.75)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+	}
+}
+
+@media(max-aspect-ratio: 16/9) {
+	.back-video {
+		width: auto;
+		height: 100%;
+	}
+
+	.navbar-toggler {
+		background: antiquewhite;
+		border-color: black;
+		border-radius: 8px;
+		border-width: 3px;
+	}
+
+	.navbar-toggler-icon {
+		background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(29,185,84, 0.75)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+	}
+
+	.dropdown-menu {
+		border-color: black;
+	}
+
+	h1 {
+		margin-top: 80px;
+	}
+}
